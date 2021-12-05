@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Favorite rock band survey</title>
+<style>
+/* :root { */
+/*   --color-white: #f3f3f3; */
+/*   --color-darkblue: #1b1b32; */
+/*   --color-darkblue-alpha: rgba(27, 27, 50, 0.8); */
+/*   --color-green: #37af65; */
+/* } */
+* {
+  box-sizing: border-box;
+}
+body {
+/* color: var(--color-white); */
+/*     color: white; */
+/* 	background-size: cover; */
+/* 	background-image: linear-gradient(rgba(255, 255, 255, 0.7), */
+/* 		rgba(255, 255, 255, 0.7)), */
+/* 	background-image: url("http://img.timeinc.net/time/photoessays/2008/rollingstones/rolling_stones_01.jpg"); */
+/* 	background-repeat: no-repeat; */
+color: white;
+	margin: 0;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+/*   background: var(--color-darkblue); */
+  background-image: linear-gradient(
+      115deg,
+/*       rgba(58, 58, 158, 0.8), */
+      rgba(24,24,24, 0.6),
+/*       rgba(136, 136, 206, 0.7) */
+      rgba(64,64,64, 0.6)
+    ),
+    url("http://img.timeinc.net/time/photoessays/2008/rollingstones/rolling_stones_01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+h1 {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<h1 id="title">Rock Band Survey</h1>
+	<p id="description">This is a survey to determine the best rock and
+		roll band of all time.</p>
+	<form id="survey-form">
+
+		<label for="name" id="name-label">Name:</label>
+		<input id="name" type="text" placeholder="enter your full name"
+			required>
+		<br>
+		<label for="email" id="email-label">Email:</label>
+		<input id="email" type="email" placeholder="enter your email" required>
+		<br>
+		<label for="number" id="number-label">Age:</label>
+		<input id="number" type="number" min="18" max="120"
+			placeholder="enter your age" width="200">
+		<br>
+
+		<p>
+			Pick your favorite guitar player:
+			<br>
+			<input id="Jimmy Page" type="radio" name="guitarist"
+				value="Jimmy Page">
+			<label for="Jimmy Page">Jimmy Page</label>
+			<br>
+			<input id="Eddie Van Halen" type="radio" name="guitarist"
+				value="Eddie Van Halen">
+			<label for="Eddie Van Halen">Eddie Van Halen</label>
+			<br>
+			<input id="Keith Richards" type="radio" name="guitarist"
+				value="Keith Richards">
+			<label for="Keith Richards">Keith Richards</label>
+		</p>
+
+		<p>
+			Pick your favorite singers:
+			<br>
+			<input id="Robert Plant" type="checkbox" name="singer"
+				value="Robert Plant">
+			<label for="Robert Plant">Robert Plant</label>
+			<br>
+			<input id="Paul McCartney" type="checkbox" name="singer"
+				value="Paul McCartney">
+			<label for="Paul McCartney">Paul McCartney</label>
+			<br>
+			<input id="Mick Jagger" type="checkbox" name="singer"
+				value="Mick Jagger">
+			<label for="Mick Jagger">Mick Jagger</label>
+		</p>
+		<p>
+			<label for="dropdown">rock band</label>
+			<select name="rock band" id="dropdown" required>
+				<option disabled selected value="">select a band</option>
+				<option value="The Rolling Stones">The Rolling Stones</option>
+				<option value="Led Zeppelin">Led Zeppelin</option>
+				<option value="The Beatles">The Beatles</option>
+				<option value="Bruce Springsteen">Bruce Springsteen</option>
+				<option value="The Police">The Police</option>
+
+			</select>
+		</p>
+		<label for="comments">Tell us what made them great:</label>
+		<br>
+
+		<textarea id="comments" name="comments" rows="4" cols="50"
+			maxlength="250" placeholder="Enter your comments here"></textarea>
+		<br>
+		<input id="submit" type="submit" value="submit" />
+		<!-- 		<button id="submit" type="submit">Submit form</button> -->
+	</form>
+	<!-- <img src="http://img.timeinc.net/time/photoessays/2008/rollingstones/rolling_stones_01.jpg"> -->
+
+</body>
+</html>

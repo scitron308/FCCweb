@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Steve Citron</title>
+<style type="text/css">
+html, body {
+	height: 100%;
+	background-color: lightsteelblue;
+}
+
+#navbar {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	background-color: lightgrey;
+	justify-content: space-evenly;
+	height: 10%;
+	align-items: center;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	border: 2px solid dimgray;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: darkslateblue;
+	font-size: 33px;
+}
+/* #navbar > .nav-links{ */
+/* flex: 1; */
+/* } */
+#welcome-section {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	font-size: 33px;
+	color: darkslateblue;
+}
+/* Portrait and Landscape */
+@media screen and (device-width: 360px) and (device-height: 640px) and
+	(-webkit-device-pixel-ratio: 3) {
+}
+</style>
+</head>
+<body>
+	<nav id="navbar">
+		<a class="nav-links about" href="#welcome-section">about</a> <a
+			class="nav-links work" href="#projects">work</a> <a
+			class="nav-links contact" href="#contact-info">contact</a>
+	</nav>
+	<section id="welcome-section">
+		<h1>Hello, I am Steve Citron</h1>
+	</section>
+	<section id="projects">
+		<div class="project-tile">
+			<a href="https://codepen.io/scitron308/full/GRvvYQy"><img
+				alt="build-a-doc-page" src="https://drive.google.com/uc?export=view&id=1jiNXGv9MV3Js5ABeD8lqte758kRBkhYu"></a>
+		</div>
+	</section>
+	<section id="contact-info">
+		Meet Steve!
+		<div>
+			<a id="profile-link" href="https://codepen.io/scitron308"
+				target="_blank">freeCodeCamp profile</a>
+		</div>
+	</section>
+</body>
+</html>

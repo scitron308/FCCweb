@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Babe's Baseball bats</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+body {
+	/* display: flexbox; */
+	padding-top: 450px;
+	padding-bottom: 250px;
+}
+
+ul li {
+	display: inline;
+	padding-right: 20px;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: white;
+	color: red;
+	font-family: 'Exo 2', sans-serif;
+	padding: 1em;
+}
+
+#email-nav {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.container {
+	background-color: firebrick;
+	padding: 5px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.items {
+	font-size: 20px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.item1 {
+	font-family: "Georgia";
+}
+
+@media ( max-width : 480px) {
+	.text {
+		font-size: 16px;
+	}
+}
+</style>
+</head>
+<body class="text">
+	<header id="header">
+		<nav id="nav-bar">
+			<ul>
+				<li><a class="nav-link" href="#about-us">about us</a></li>
+				<li><a class="nav-link" href="#our-bats">our bats</a></li>
+				<li><a class="nav-link" href="#pricing">pricing</a></li>
+			</ul>
+
+		</nav>
+		<div class="container">
+			<div class="item1 items">
+				<h1>Babe's Baseball bats</h1>
+			</div>
+			<div class="item2 items">
+				<img id="header-img" alt="baseball bat logo"
+					src="https://drive.google.com/uc?export=view&id=1OTpUoEs2p_x-gAaS5lHrDeAspwEEYiev">
+			</div>
+			<div class="item3 items">
+				<h2>
+					"How big is <i>your</i> stick"
+				</h2>
+			</div>
+		</div>
+
+	</header>
+	<form id="form" action="https://www.freecodecamp.com/email-submit">
+		<label for="email" id="email-label">Enter your email to
+			receive our free baseball bat guide:</label><br>
+		<nav id="email-nav">
+			<input id="email" type="email" name="email"
+				placeholder="enter your email address"> <input id="submit"
+				type="submit" value="Send me my free bat guide">
+		</nav>
+		<!-- <img alt="baseball bat logo" src="https://images.freeimages.com/images/large-previews/053/baseball-bat-toy-1307780.jpg"> -->
+	</form>
+
+	<!-- https://www.pexels.com/video/baseball-player-holding-his-baseball-bat-forward-5182922/ -->
+	<iframe id="video" width="878" height="494"
+		src="https://www.youtube.com/embed/4Ej30h_bdL0"
+		title="YouTube video player"></iframe>
+
+	<p id="about-us">We build the world's greatest baseball bats</p>
+	<p id="our-bats">We sell wood and aluminum bats</p>
+	<p id="pricing">Starting at only $100 per bat</p>
+
+</body>
+</html>
